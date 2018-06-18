@@ -1,0 +1,14 @@
+#ifndef CONFIG_HPP_INCLUDED_1686265581998813523
+#define CONFIG_HPP_INCLUDED_1686265581998813523 1
+
+namespace Data
+{
+  namespace Config
+  {
+
+    
+    
+  } // end of namespace Config
+} // end of namespace Data
+
+#endif // !defined CONFIG_HPP_INCLUDED_1686265581998813523
