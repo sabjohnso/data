@@ -5,3 +5,12 @@ endmacro( data_add_simple_test  name )
 
 data_add_simple_test( optional )
 data_add_simple_test( shared )
+
+data_add_simple_test( either )
+
+data_add_simple_test( delay )
+
+data_add_simple_test( list )
+
+
+

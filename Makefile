@@ -7,7 +7,7 @@ MAKEFILE = $(BUILD_DIRECTORY)/Makefile
 
 CMAKE_FLAGS_COMMON = \
   -DCMAKE_CXX_STANDARD=17 \
-  -DCMAKE_CXX_FLAGS="-Wall -Werror -pedantic" \
+  -DCMAKE_CXX_FLAGS="-pthread -Wall -Werror -pedantic" \
   -DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O3 -g
 
 

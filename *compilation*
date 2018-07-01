@@ -1,0 +1,51 @@
+-*- mode: compilation; default-directory: "~/Sandbox/data/" -*-
+Compilation started at Thu Jun 28 21:22:21
+
+cd ~/Sandbox/data && make -j 10
+cd ./build/release && CC=gcc-7.3 CXX=g++-7.3 cmake -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_FLAGS="-pthread -Wall -Werror -pedantic" -DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O3 -g -DCMAKE_BUILD_TYPE=Release ../..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sbj/Sandbox/data/build/release
+cd ./build/release && make && make test
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[2]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Entering directory '/home/sbj/Sandbox/data/build/release'
+[ 11%] Generating doxygen.log
+make[3]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+[ 11%] Built target data_documentation
+make[3]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+[ 33%] Built target shared_test
+make[3]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+[ 55%] Built target optional_test
+make[3]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+[ 77%] Built target delay_test
+make[3]: Entering directory '/home/sbj/Sandbox/data/build/release'
+make[3]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+[100%] Built target list_test
+make[2]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+make[1]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Entering directory '/home/sbj/Sandbox/data/build/release'
+Running tests...
+Test project /home/sbj/Sandbox/data/build/release
+    Start 1: optional
+1/4 Test #1: optional .........................   Passed    0.00 sec
+    Start 2: shared
+2/4 Test #2: shared ...........................   Passed    0.00 sec
+    Start 3: delay
+3/4 Test #3: delay ............................   Passed    0.00 sec
+    Start 4: list
+4/4 Test #4: list .............................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.01 sec
+make[1]: Leaving directory '/home/sbj/Sandbox/data/build/release'
+
+Compilation finished at Thu Jun 28 21:22:21
